@@ -22,10 +22,7 @@ function generatePassword() {
     // THEN I choose a length of at least 8 characters and no more than 128 characters 
     password = "";
     function passwordLength() {
-      var length = window.prompt("Choose a length of password between 8 and 128 characters");    
-      // if (length === null) {
-      //   return
-      // } else {
+      var length = window.prompt("Choose a length of password between 8 and 128 characters");
           while (length < 8 || length > 128) {
             length = window.prompt("Choose a length of password between 8 and 128 characters");
           };
@@ -33,8 +30,7 @@ function generatePassword() {
           if (!confirm) {
             passwordLength();      
           }
-          return length;
-      // }
+          return length;      
     }
     
     var psswrdLength = passwordLength();  
@@ -138,8 +134,7 @@ function generatePassword() {
   
         if (charPool === ""){
           window.alert("You must chose at least one type of character to proceed")
-        }
-        // console.log(charPool + " string length " + charPool.length);
+        }        
       }
     return charPool
     }
